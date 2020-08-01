@@ -1,9 +1,13 @@
+// Consants
 const express = require('express');
 const path = require('path');
 const exphbs = require('express-handlebars');
 const { get } = require('http');
 const methodOverride = require('method-override');
 const session = require('express-session');
+const Handlebars = require('handlebars');
+const {allowInsecurePrototypeAccess} = require('@handlebars/allow-prototype-access'); // Se añade para poder visualizar las tarjetas
+
 
 // Server init
 const app = express();
@@ -16,6 +20,7 @@ app.engine('.hbs', exphbs({
     defaultLayout: 'main',
     layoutsDir: path.join(app.get('views'), 'layouts'),
     partialsDir: path.join(app.get('views'), 'partials'),
+    handlebars: allowInsecurePrototypeAccess(Handlebars), // Se añade para poder visualizar las tarjetas
     extname: '.hbs'
 }));
 app.set('view engine', '.hbs');

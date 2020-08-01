@@ -1,8 +1,8 @@
 # NOTES APP
 Proyecto de portal de notas con MongoDB y NodeJS
 
-## REQUERIMIENTOS
-[INSERTAR REQUERIMIENTOS AQUI]
+## AVISOS DE SEGURIDAD
+Se ha hecho un bypass en Handlebars y Express para poder mostrar las tarjetas correctamente. Esto está pendiente de solucionar. Mientras tanto, la información técnica de lo realizado se encuentra en [https://www.npmjs.com/package/@handlebars/allow-prototype-access](https://www.npmjs.com/package/@handlebars/allow-prototype-access)
 
 ## LICENSE
 El presente proyecto tiene una licencia GNU GPL v3. Para más información se ruega ver el fichero [LICENSE](LICENSE)

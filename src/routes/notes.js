@@ -29,8 +29,13 @@ router.post('/notes/new-note', async(req, res) => {
 });
 
 router.get('/notes', async(req, res) => {
-    const notes = await Note.find();
+    const notes = await Note.find().sort({date: 'desc'});
     res.render('notes/all-notes', {notes});
+});
+
+router.get('/notes/edit/:id', async(req, res) => {
+    const note = await Note.findById(req.params.id);
+    res.render('notes/edit-note', {note});
 });
 
 module.exports = router;
