@@ -1,6 +1,9 @@
 # NOTES APP
 Proyecto de portal de notas con MongoDB y NodeJS
 
+## ESTADO DEL PROYECTO
+A fecha de 14 de noviembre de 2020 el proyecto está paralizado para poder centrarme en la carrera universitaria. En cuanto se pueda se retoma el proyecto.
+
 ## AVISOS DE SEGURIDAD
 Se ha hecho un bypass en Handlebars y Express para poder mostrar las tarjetas correctamente. Esto está pendiente de solucionar. Mientras tanto, la información técnica de lo realizado se encuentra en [https://www.npmjs.com/package/@handlebars/allow-prototype-access](https://www.npmjs.com/package/@handlebars/allow-prototype-access)
 
